@@ -1,2 +1,27 @@
 <%# The below code creates an array of 10 random names %>
 <%= names = Array.new(10) { Faker::Name.unique.name  } %>
+  <ul class="list-group">
+  <% names.each do |a_name|%>
+  <li class="list-group-item"><%= a_name %></li>
+  <% end %>
+  </ul>
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+<p></p>
+<style>
+  .list-group-item:hover {
+  background-color: grey;
+  cursor: pointer;
+  }
+</style>
